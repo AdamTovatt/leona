@@ -45,12 +45,12 @@ namespace Leona.Models.Drawing
             BitmapWriter.BitmapWriter writer = new BitmapWriter.BitmapWriter(width, height);
 
             foreach(Line line in Lines)
-                DrawLine(writer, line, margin);
+                DrawLine(writer, line, margin + (int)Math.Abs(minX), margin + (int)Math.Abs(minY));
 
             writer.SaveColorImage(filePath);
         }
 
-        private void DrawLine(BitmapWriter.BitmapWriter writer, Line line, int margin)
+        private void DrawLine(BitmapWriter.BitmapWriter writer, Line line, int shiftX, int shiftY)
         {
             int x0 = (int)Math.Round(line.Start.X);
             int y0 = (int)Math.Round(line.Start.Y);
@@ -66,7 +66,7 @@ namespace Leona.Models.Drawing
 
             while (true)
             {
-                writer.SetPixel(x0 + margin, y0 + margin, color.R, color.G, color.B);
+                writer.SetPixel(x0 + shiftX, y0 + shiftY, color.R, color.G, color.B);
 
                 if (x0 == x1 && y0 == y1) break;
                 int e2 = 2 * err;

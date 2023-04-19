@@ -70,7 +70,7 @@ namespace Leona
         private static string GetOutPutPathFromCodePath(string codePath)
         {
             string withoutFileExtension = codePath.Substring(0, codePath.LastIndexOf('.'));
-            return withoutFileExtension + ".png";
+            return withoutFileExtension + ".bmp";
         }
 
         private static void OpenImage(string filename)
