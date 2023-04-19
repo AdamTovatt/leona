@@ -1,0 +1,5 @@
+﻿% Syntaxfel: saknas punkt.
+DOWN
+% Om filen tar slut mitt i ett kommando
+% så anses felet ligga på sista raden
+% i filen där det förekom någon kod

@@ -1,0 +1,2 @@
+﻿% Oavslutad loop
+REP 5 "DOWN. FORW 1. LEFT 10.

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leona", "Leona\Leona.csproj", "{1CA6166C-11BF-48CC-9DCF-256E93016565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeonaTests", "LeonaTests\LeonaTests.csproj", "{BE913336-8386-48DD-8A36-91A565123827}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CA6166C-11BF-48CC-9DCF-256E93016565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA6166C-11BF-48CC-9DCF-256E93016565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA6166C-11BF-48CC-9DCF-256E93016565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA6166C-11BF-48CC-9DCF-256E93016565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE913336-8386-48DD-8A36-91A565123827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE913336-8386-48DD-8A36-91A565123827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE913336-8386-48DD-8A36-91A565123827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE913336-8386-48DD-8A36-91A565123827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7817909A-56A6-48BC-9EBF-C63826C2FFD1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestFiles\Input\SampleInput01.txt" />
+    <None Remove="TestFiles\Input\SampleInput02.txt" />
+    <None Remove="TestFiles\Input\SampleInput03.txt" />
+    <None Remove="TestFiles\Input\SampleInput04.txt" />
+    <None Remove="TestFiles\Input\SampleInput05.txt" />
+    <None Remove="TestFiles\Input\SampleInput06.txt" />
+    <None Remove="TestFiles\Input\SampleInput07.txt" />
+    <None Remove="TestFiles\Input\SampleInput08.txt" />
+    <None Remove="TestFiles\Input\SampleInput09.txt" />
+    <None Remove="TestFiles\Input\SampleInput10.txt" />
+    <None Remove="TestFiles\Input\SampleInput11.txt" />
+    <None Remove="TestFiles\Input\SampleInput12.txt" />
+    <None Remove="TestFiles\Input\SampleInput13.txt" />
+    <None Remove="TestFiles\Input\SampleInput14.txt" />
+    <None Remove="TestFiles\Output\SampleOutput01.txt" />
+    <None Remove="TestFiles\Output\SampleOutput02.txt" />
+    <None Remove="TestFiles\Output\SampleOutput03.txt" />
+    <None Remove="TestFiles\Output\SampleOutput04.txt" />
+    <None Remove="TestFiles\Output\SampleOutput05.txt" />
+    <None Remove="TestFiles\Output\SampleOutput06.txt" />
+    <None Remove="TestFiles\Output\SampleOutput07.txt" />
+    <None Remove="TestFiles\Output\SampleOutput08.txt" />
+    <None Remove="TestFiles\Output\SampleOutput09.txt" />
+    <None Remove="TestFiles\Output\SampleOutput10.txt" />
+    <None Remove="TestFiles\Output\SampleOutput11.txt" />
+    <None Remove="TestFiles\Output\SampleOutput12.txt" />
+    <None Remove="TestFiles\Output\SampleOutput13.txt" />
+    <None Remove="TestFiles\Output\SampleOutput14.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestFiles\Input\SampleInput02.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput03.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput04.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput05.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput06.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput07.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput08.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput09.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput10.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput11.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput12.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput01.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput13.txt" />
+    <EmbeddedResource Include="TestFiles\Input\SampleInput14.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput02.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput03.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput04.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput05.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput06.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput07.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput08.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput09.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput10.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput11.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput12.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput01.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput13.txt" />
+    <EmbeddedResource Include="TestFiles\Output\SampleOutput14.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Leona\Leona.csproj" />
+  </ItemGroup>
+
+</Project>

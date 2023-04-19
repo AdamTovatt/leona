@@ -1,0 +1,10 @@
+﻿DOWN .
+% OBS! Denna fil har ett
+% tabb-tecken (’\t’) i första
+% REP-satsen. Om du kör den
+% genom att göra copy-paste
+% kommer tabb-tecknet inte
+% testas korrekt.
+REP	2 REP % raaadbryyyt
+1 "REP 2 REP 2 "FORW 1."
+LEFT 45."
