@@ -1,7 +1,7 @@
 [![flowers](Flowers.bmp)](Flower.bmp)
 # Leona
 ## *What is this?*
-This is a implementation of a language for drawing pictures. This was originally a project that was an assignment of the course DD1360 at the Royal Institute of Technology (KTH). The assignment only included making text output but I made it support graphical output as well.
+This is an implementation of a language for drawing pictures. This was originally a project that was an assignment of the course DD1360 at the Royal Institute of Technology (KTH). The assignment only included making text output but I made it support graphical output as well.
 
 ## *How do I use it?*
 Compile the code or download the executable from the releases page. You can run the executable directly by it self and it will prompt you for a file path to a file containing the code. You can also (which i recommend) open a file with the program, and it will automatically use that file as code input. In windows this can be done by dragging and dropping the file onto the executable.
@@ -48,7 +48,7 @@ In my implementation a token is an abstract class that is extended by all the di
 
 <details>
 <summary>Parser</summary>
-The parser converts a list of tokens into a parse tree (also known as a syntax tree). A parse tree is just a fancy word for a list of instructions that can be thought to be in the shape of a tree since a instruction (specifically the repeat instruction) can have a sub list of instructions.  
+The parser converts a list of tokens into a parse tree (also known as a syntax tree). A parse tree is just a fancy word for a list of instructions that can be thought to be in the shape of a tree since an instruction (specifically the repeat instruction) can have a sub list of instructions.  
 
 In my implementation there is a class called ParseTree that represents a (you guessed it) parse tree. A ParseTree contains a list of instruction objects are created by the parser from the tokens.
 <br>
