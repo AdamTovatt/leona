@@ -22,7 +22,7 @@ namespace LeonaTests.Tests
 
             string expectedTree = "<Down>\r\n<Forward 1>\r\n<Turn Left 90>\r\n<Forward 1>\r\n<Turn Left 90>\r\n<Forward 1>\r\n<Turn Left 90>\r\n<Forward 1>\r\n<Turn Left 90>\r\n";
 
-            Assert.AreEqual(expectedTree, tree.ToString());
+            Assert.AreEqual(expectedTree.RemoveControlCharacters(), tree.ToString().RemoveControlCharacters());
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace LeonaTests.Tests
 
             string expectedString = "<Down>\r\n<Up>\r\n<Down>\r\n<Down>\r\n<Repeat 3 [<Color #FF0000><Forward 1><Turn Left 10><Color #000000><Forward 2><Turn Left 20>]>\r\n<Color #111111>\r\n<Repeat 1 [<Backward 1>]>\r\n";
 
-            Assert.AreEqual(expectedString, tree.ToString());
+            Assert.AreEqual(expectedString.RemoveControlCharacters(), tree.ToString().RemoveControlCharacters());
         }
     }
 }

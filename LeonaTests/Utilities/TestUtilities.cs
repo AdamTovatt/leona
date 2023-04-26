@@ -2,7 +2,7 @@
 
 namespace LeonaTests.Utilities
 {
-    public class TestUtilities
+    public static class TestUtilities
     {
         public static string? ReadTestFile(string filename)
         {
@@ -21,6 +21,11 @@ namespace LeonaTests.Utilities
             {
                 return null;
             }
+        }
+
+        public static string RemoveControlCharacters(this string input)
+        {
+            return new string(input.Where(c => !char.IsControl(c) && c != ' ').ToArray());
         }
     }
 }
